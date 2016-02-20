@@ -6,4 +6,4 @@ comments: false
 author_footer: false
 ---
 
-So about. Very interesting. wow
+So about. Very android. wow
