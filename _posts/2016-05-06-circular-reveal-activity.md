@@ -2,7 +2,7 @@
 layout: post
 title: "Circular reveal activity"
 category: android
-description: "Lollipop circular reveal animation"
+description: "Lollipop circular activity"
 date:   2016-05-06
 author: alexandrius
 header-img: "https://media.giphy.com/media/l3978uM5S6xYVnDQQ/giphy.gif"
