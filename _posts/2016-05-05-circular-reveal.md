@@ -2,12 +2,17 @@
 layout: post
 title: "Lollipop circular reveal"
 category: android
+description: "Lollipop circular reveal animation"
+date:   2016-05-05
+author: alexandrius
+header-img: "https://media.giphy.com/media/26vUBjg9YaQ7jkGvC/giphy.gif"
 ---
 
 Yeah, yeah everyone has done one about this topic and I suck. I got it OK?
 
 This tip is about creating cool loading progress view and reveal animation
-![alt tag](https://media.giphy.com/media/26vUBjg9YaQ7jkGvC/giphy.gif)
+
+<img src="https://media.giphy.com/media/26vUBjg9YaQ7jkGvC/giphy.gif" width="300">
 
 
 <!-- more -->
@@ -43,8 +48,7 @@ This gonna be our layout XML for LoadingView:
 {% endhighlight %}
 
 Aaaaand we get this shit.
-![alt tag](../../../../../images/loading.png)
-
+<img src="/images/loading.png" width="300">
 
 Ok let's continue... The animation itself is pretty simple to code.
 {% highlight java %}

@@ -2,10 +2,16 @@
 layout: post
 title: "Circular reveal activity"
 category: android
+description: "Lollipop circular reveal animation"
+date:   2016-05-06
+author: alexandrius
+header-img: "https://media.giphy.com/media/l3978uM5S6xYVnDQQ/giphy.gif"
 ---
 
 So last time we've covered how to make the simple circular reveal animation. Today I'm gonna write post about how to deal with ADHD. Aahh I'm just kidding... I love to joke around. Today we gonna create reveal animation for activities not just lame views. And Yes those are activities!
-![alt tag](https://media.giphy.com/media/l3978uM5S6xYVnDQQ/giphy.gif)
+
+
+<img src="https://media.giphy.com/media/l3978uM5S6xYVnDQQ/giphy.gif" width="300">
 
 I know what you are thinking now. "Wow, alexandrius you are so smart". "OMG alexandrius you are the best". Yeah, yeah I know...
 
@@ -15,11 +21,11 @@ Ok let's rock!
 
 First of all we gonna create to dumb activities MainActivity and RevealActivity.
 
-1) MainActivity
+##1) MainActivity ##
 
-a. Change activity name to DumbActivity cause MainActivity sounds so arrogant. 
+__a. Change activity name to DumbActivity cause MainActivity sounds so arrogant.__
 
-b. Create layout for DumbActivity
+__b. Create layout for DumbActivity__
 {% highlight xml %}
 
 <?xml version="1.0" encoding="utf-8"?>
@@ -47,7 +53,7 @@ b. Create layout for DumbActivity
 
 </FrameLayout>
 {% endhighlight %}
-c. Add touch listener to touch_me_view
+__c. Add touch listener to touch_me_view__
 {% highlight java %}
 View v = findViewById(R.id.touch_me_view);
 v.setOnTouchListener(new View.OnTouchListener() {
@@ -64,9 +70,9 @@ v.setOnTouchListener(new View.OnTouchListener() {
 
 Basically that's it for DUMB activity
 
-2) RevealActivity
+##2) RevealActivity ##
 
-a. We need to add style for this activity. Let's call it noAnimTheme. We will remove any kind of animation and make window transparent for it
+__a. We need to add style for this activity. Let's call it noAnimTheme. We will remove any kind of animation and make window transparent for it__
 {% highlight xml %}
 <style name="noAnimTheme" parent="AppTheme">
     <item name="android:windowAnimationStyle">@null</item>
@@ -76,7 +82,7 @@ a. We need to add style for this activity. Let's call it noAnimTheme. We will re
 </style>
 {% endhighlight %}
 
-b. Create layout for RevealActivity. Make background transparent and TextView invisible
+__b. Create layout for RevealActivity. Make background transparent and TextView invisible__
 {% highlight xml %}
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -101,7 +107,7 @@ b. Create layout for RevealActivity. Make background transparent and TextView in
 
 BTW if TextView isn't clickable you should set focusable for TextView or whatever. I had that kind of problem once
 
-c. Java code. I didn't split it to parts. I'm lazy, so are you -_-
+__c. Java code. I didn't split it to parts. I'm lazy, so are you -_-__
 
 {% highlight java %}
 public class RevealActivity extends AppCompatActivity {
