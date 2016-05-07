@@ -4,43 +4,43 @@
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
     <!-- facebook Open Graph Metadatas -->
-  <meta content="837080576396724" property="fb:app_id">
-  <meta content="{{ site.title }}" property="og:site_name">
+  <meta content="837080576396724" content="fb:app_id">
+  <meta content="{{ site.title }}" content="og:site_name">
   {% if page.title %}
-  <meta content="{{ page.title }}" property="og:title">
+  <meta content="{{ page.title }}" content="og:title">
   {% else %}
-  <meta content="{{ site.title }}" property="og:title">
+  <meta content="{{ site.title }}" content="og:title">
   {% endif %}
   {% if page.title %}
-  <meta content="article" property="og:type">
+  <meta content="article" content="og:type">
   {% else %}
-  <meta content="website" property="og:type">
+  <meta content="website" content="og:type">
   {% endif %}
   {% if page.description %}
-  <meta content="{{ page.description }}" property="og:description">
+  <meta content="{{ page.description }}" content="og:description">
   {% else %}
-  <meta content="{{ site.description }}" property="og:description">
+  <meta content="{{ site.description }}" content="og:description">
   {% endif %}
   {% if page.url %}
-  <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+  <meta content="{{ site.url }}{{ page.url }}" content="og:url">
   {% endif %}
   {% if page.date %}
-  <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
-  <meta content="{{ site.url }}/about/" property="article:author">
+  <meta content="{{ page.date | date_to_xmlschema }}" content="article:published_time">
+  <meta content="{{ site.url }}/about/" content="article:author">
   {% endif %}
   {% if page.image %}
-  <meta content="/img/posts/{{ page.image }}" property="og:image">
+  <meta content="/img/posts/{{ page.image }}" content="og:image">
   {% else %}
-  <meta content="/images/logo.png" property="og:image">
+  <meta content="/images/logo.png" content="og:image">
   {% endif %}
   {% if page.categories %}
   {% for category in page.categories limit:1 %}
-  <meta content="{{ category }}" property="article:section">
+  <meta content="{{ category }}" content="article:section">
   {% endfor %}
   {% endif %}
   {% if page.tags %}
   {% for tag in page.tags %}
-  <meta content="{{ tag }}" property="article:tag">
+  <meta content="{{ tag }}" content="article:tag">
   {% endfor %}
   {% endif %}
 
