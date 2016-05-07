@@ -14,3 +14,22 @@ layout: default
   <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a> or browse <a href="https://github.com/{{ site.github_site_repo }}" target="_blank">source on GitHub</a>.</p>
 
 </div>
+
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '837080576396724',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
