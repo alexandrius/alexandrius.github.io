@@ -30,3 +30,12 @@
 
 </div>
 
+{% if content and page.author_footer != false %}
+
+	{% include post_footer.html %}
+
+	{% if page.comments != false %}
+	    {% include disqus.html %}
+	{% endif %}
+
+{% endif %}
