@@ -101,7 +101,7 @@ b. Create layout for RevealActivity. Make background transparent and TextView in
 
 BTW if TextView isn't clickable you should set focusable for TextView or whatever. I had that kind of problem once
 
-c. Java code. I didn't split it to parts. I'm lazy, so you are -_-
+c. Java code. I didn't split it to parts. I'm lazy, so are you -_-
 
 {% highlight java %}
 public class RevealActivity extends AppCompatActivity {
