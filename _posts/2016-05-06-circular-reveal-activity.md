@@ -21,7 +21,7 @@ Ok let's rock!
 
 First of all we gonna create to dumb activities MainActivity and RevealActivity.
 
-## 1) MainActivity
+1) MainActivity
 
 __a. Change activity name to DumbActivity cause MainActivity sounds so arrogant.__
 
@@ -70,7 +70,7 @@ v.setOnTouchListener(new View.OnTouchListener() {
 
 Basically that's it for DUMB activity
 
-## 2) RevealActivity
+2) RevealActivity
 
 __a. We need to add style for this activity. Let's call it noAnimTheme. We will remove any kind of animation and make window transparent for it__
 {% highlight xml %}
