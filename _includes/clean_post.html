@@ -1,0 +1,15 @@
+<div class="entry">
+
+	<div class="entry-content">
+		<h1 class="entry-title"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></h1>
+		<p class="entry-meta">
+				{{ page.date | date: "%b %-d, %Y" }}
+				{% if page.category %} • Category: {{ page.category|capitalize }}{% endif %}
+			</p>
+		<article class="entry-body">{{post.excerpt}}</article>
+		<p><a href="{{ page.url | prepend: site.baseurl }}">Read more »</a></p>
+		<hr>
+		
+	</div>
+
+</div>
